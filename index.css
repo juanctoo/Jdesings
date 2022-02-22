@@ -1,0 +1,279 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection{
+	color: white;
+	background-color: black;
+}
+
+#headerResponsive{
+	display: none;
+}
+
+#mainText  {
+	font-family: 'Almarai', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 40px;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	border-radius: 50px 50px 50px 50px;
+	border: 3px solid black;
+	box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+	max-width: 220px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+}
+
+#secondText {
+	font-family: 'Almarai Light', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 40px;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	border-radius: 50px 50px 50px 50px;
+	border: 3px solid black;
+	box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+	max-width: 300px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+}
+
+
+#img-trabajos {
+	
+	justify-content: center;
+	padding: 0px 50px;
+}
+
+#imgJob1 {
+	width: 300px;
+	height: 300px;
+	box-shadow: 20px 20px 0px 0px rgba(0,0,0,1);
+	border: 2px solid black;
+	transition: 0.5s;
+}
+
+#imgJob1:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: sticky;
+	z-index: 200;
+	background: black;
+	padding: 50px 0px;
+	width: 100%;
+}
+
+#headerResponsive {
+	display: none;
+}
+
+#ulResponsive{
+	display: none;
+	border-radius: 40px 40px 40px 40px;
+}
+
+#menuResponsiveLogo {
+	display: none;
+	
+}
+
+
+
+ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: black; */
+	margin: 0;
+	width: 100%;
+}
+
+li a{
+	text-decoration: none;
+	font-family: 'Almarai', sans-serif;
+	/* background: black; */
+	color: #f2ecec;
+	text-shadow: -1px 1px 11px rgba(255,255,255,0.64);
+	box-sizing: border-box;
+	padding: 20px 60px;
+	font-size: 15px;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+body {
+	background: #f2ecec;
+	margin: 0;
+	flex-wrap: wrap;
+	position: relative;
+	padding-bottom: 100%;
+	/* border: 3px solid red; */
+	height: 100vh;
+}
+
+#mainImage {
+	width: 100%;
+	transition: 1s;
+}
+
+#mainImage:hover {
+	transform: scale(1.8);
+	cursor: pointer;
+}
+#Image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	overflow: hidden;
+}
+
+#cornerdiv {
+	display: flex;
+	position: absolute;
+	left: 0;
+	margin: 0;
+}
+
+#cornerlogo {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+#footer {
+	justify-content: center;
+	align-items: center;
+	background: black;
+	border: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 100px 0;
+
+}
+
+#footertext {
+	color: #f2ecec;
+	font-family: 'Almarai', sans-serif;
+}
+
+@media only screen and (max-width:400px) {
+	#imgJob1 {
+		width: 80%;
+		height: 80%;
+	}
+
+	#secondText {
+		font-size: 30px;
+	}
+	
+	#mainText{
+		font-size: 30px;
+	}
+
+}
+
+@media only screen and (max-width:878px) {
+	
+	#footer {
+
+		padding: 50px 0px;
+	}
+	
+
+	#header {
+		display: none;
+	}
+
+	#headerResponsive {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: sticky;
+		z-index: 350;
+		background: black;
+		padding: 50px 0px;
+		width: 100%;
+	}
+
+	li  {
+		padding: 50px 0px;
+		list-style: none;
+	}
+
+
+	#menuResponsiveLogo {
+		display: flex;
+		position: absolute;
+		top: 32px;
+		right: 0px;
+		width: 40px;
+		height: 35px;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 50px;
+		transition: 0.5s;
+		z-index: 400;
+	}
+
+	#ulResponsive {
+		display: flex;
+		position: absolute;
+		top: -700px;
+		right: 0;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		background: black;
+		margin: 0;
+		width: 250px;
+		height: 650px;
+		transition: 0.5s;
+		z-index: 300;
+	}
+	
+
+	#menuResponsiveLogo:hover {
+		transform: rotate(90deg);
+		
+	}
+
+	#menuResponsiveLogo:hover ~ ul {
+		top: 0px;
+	}
+	
+	
+	
+
+
+
+	#navResponsive{
+		text-decoration: none;
+		font-family: 'Almarai', sans-serif;
+		color: #f2ecec;
+		font-size: 15px;
+	}
+}
